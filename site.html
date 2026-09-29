@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>AfterDark Cafe: A Complete Lifestyle Destination, Opening Soon in Dharmanagar</title>
 <meta name="description" content="AfterDark Cafe brings together premium cafe experiences, wholesome food, fitness-focused options and lifestyle services in Dharmanagar, North Tripura. Opening soon.">
 <link rel="icon" href="https://i.ibb.co/1fkXTF5T/afterdark-cafelogo.png">
@@ -1276,7 +1276,9 @@
   .back-to-top{
     position:fixed;
     right:24px;
+    right:max(24px, env(safe-area-inset-right, 24px));
     bottom:24px;
+    bottom:max(24px, calc(env(safe-area-inset-bottom, 0px) + 20px));
     width:46px;
     height:46px;
     border-radius:50%;
@@ -1306,7 +1308,9 @@
   @media (max-width:640px){
     .back-to-top{
       right:16px;
+      right:max(16px, env(safe-area-inset-right, 16px));
       bottom:16px;
+      bottom:max(16px, calc(env(safe-area-inset-bottom, 0px) + 12px));
       width:42px;
       height:42px;
       font-size:0.95rem;
