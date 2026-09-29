@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AfterDark Cafe: A Complete Lifestyle Destination, Opening Soon in Dharmanagar</title>
+<meta name="description" content="AfterDark Cafe brings together premium cafe experiences, wholesome food, fitness-focused options and lifestyle services in Dharmanagar, North Tripura. Opening soon.">
+<link rel="icon" href="https://i.ibb.co/1fkXTF5T/afterdark-cafelogo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script>
+  (function(){
+    try{
+      var saved = localStorage.getItem('afterdark-theme');
+      var theme = saved ? saved : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      if(theme === 'light'){ document.documentElement.setAttribute('data-theme','light'); }
+    }catch(e){}
+  })();
+</script>
+<style>
+  :root{
+    --black:      #0A0809;
+    --black-2:    #120f0f;
+    --panel:      #17130f;
+    --panel-line: #2a231a;
+    --cream:      #EBDBC4;
+    --cream-dim:  #c9b898;
+    --gold:       #DCAD53;
+    --gold-bright:#e8c073;
+    --bronze:     #9c7a3f;
+    --rule: rgba(220,173,83,0.28);
+    --shadow: rgba(0,0,0,0.55);
+    --shadow-strong: rgba(0,0,0,0.6);
+    --overlay: rgba(10,8,9,0.94);
+    --overlay-72: rgba(10,8,9,0.72);
+    --overlay-85: rgba(10,8,9,0.85);
+    --overlay-82: rgba(10,8,9,0.82);
+    --overlay-92: rgba(10,8,9,0.92);
+    --overlay-75: rgba(10,8,9,0.75);
+    --overlay-60: rgba(10,8,9,0.6);
+    --overlay-ring: rgba(10,8,9,0.85);
+    --hairline-30: rgba(235,219,196,0.3);
+    --map-filter: invert(90%) hue-rotate(180deg) brightness(0.95) contrast(0.92);
+    --scrim-strong: rgba(10,8,9,0.85);
+    --scrim-soft: rgba(10,8,9,0.5);
+    --gallery-fade: rgba(10,8,9,0.92);
+    --gallery-label-text: #EBDBC4;
+    color-scheme: dark;
+  }
+
+  :root[data-theme="light"]{
+    --black:      #FBF7F0;
+    --black-2:    #F3ECDE;
+    --panel:      #FFFFFF;
+    --panel-line: #E4D9C3;
+    --cream:      #2A211A;
+    --cream-dim:  #6b5c48;
+    --gold:       #B4802E;
+    --gold-bright:#8f6421;
+    --bronze:     #a37d34;
+    --rule: rgba(180,128,46,0.32);
+    --shadow: rgba(60,45,20,0.14);
+    --shadow-strong: rgba(60,45,20,0.22);
+    --overlay: rgba(251,247,240,0.94);
+    --overlay-72: rgba(42,33,26,0.45);
+    --overlay-85: rgba(42,33,26,0.55);
+    --overlay-82: rgba(42,33,26,0.52);
+    --overlay-92: rgba(42,33,26,0.6);
+    --overlay-75: rgba(251,247,240,0.9);
+    --overlay-60: rgba(251,247,240,0.85);
+    --overlay-ring: rgba(251,247,240,0.9);
+    --hairline-30: rgba(42,33,26,0.18);
+    --map-filter: none;
+    --scrim-strong: rgba(20,15,10,0.72);
+    --scrim-soft: rgba(20,15,10,0.35);
+    --gallery-fade: rgba(180,128,46,0.16);
+    --gallery-label-text: #2A211A;
+    color-scheme: light;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    background:var(--black);
+    color:var(--cream);
+    font-family:'Work Sans', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    transition:background 0.25s ease, color 0.25s ease;
+  }
+
+  img{ max-width:100%; display:block; }
+
+  a{ color:inherit; text-decoration:none; }
+
+  h1,h2,h3,h4{
+    font-family:'Playfair Display', serif;
+    font-weight:700;
+    line-height:1.08;
+    letter-spacing:0.001em;
+  }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  .rule{
+    border:none;
+    border-top:1px solid var(--rule);
+  }
+
+  /* ---------- Focus ---------- */
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--gold-bright);
+    outline-offset:3px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+  }
+
+  /* ---------- Icons ---------- */
+  i.fa-solid, i.fa-brands, i.fa-regular{
+    display:inline-block;
+  }
+
+  .dev-popup-heart{ display:inline-block; }
+
+  /* ================= HEADER ================= */
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:var(--overlay);
+    border-bottom:1px solid var(--panel-line);
+    backdrop-filter:blur(6px);
+  }
+  header .nav{ position:relative; }
+  .nav{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    padding:14px 0;
+    gap:20px;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-shrink:0;
+    justify-self:start;
+  }
+  .brand-logo-frame{
+    height:42px;
+    width:42px;
+    flex-shrink:0;
+    border-radius:0;
+    overflow:hidden;
+    background:var(--black-2);
+  }
+  .brand-text{ display:flex; flex-direction:column; line-height:1; text-align:left; }
+  .brand-text .name{
+    font-family:'Playfair Display', serif;
+    font-size:1.22rem;
+    font-weight:700;
+    color:var(--cream);
+    letter-spacing:0.01em;
+    white-space:nowrap;
+  }
+  .brand-text .tag{
+    font-size:0.6rem;
+    color:var(--gold);
+    letter-spacing:0.28em;
+    margin-top:3px;
+  }
+  /* Header logo: small, square/cropped, NOT circular. Wrapped in .brand-logo-frame
+     which clips the overflow so the logo's own gold ring is cropped away. */
+  .brand-logo{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    border:none;
+    outline:none;
+    box-shadow:none;
+    transform:scale(1.32);
+  }
+
+  .nav-links{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    justify-content:center;
+    justify-self:center;
+  }
+  .nav-links a{
+    font-size:0.87rem;
+    color:var(--cream-dim);
+    position:relative;
+    padding:6px 1px;
+    white-space:nowrap;
+    display:inline-flex;
+    align-items:center;
+  }
+  .nav-links a:hover, .nav-links a:focus-visible{ color:var(--cream); }
+  .nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0; right:100%;
+    bottom:0;
+    height:1px;
+    background:var(--gold);
+    transition:right 0.25s ease;
+  }
+  .nav-links a:hover::after, .nav-links a.is-active::after{ right:0; }
+  .nav-links a.is-active{ color:var(--gold-bright); }
+
+  .nav-end{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:12px;
+    justify-self:end;
+  }
+
+  .nav-toggle,
+  .sidebar-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:none;
+    border:1px solid var(--panel-line);
+    color:var(--cream);
+    font-size:1.05rem;
+    width:42px; height:42px;
+    flex-shrink:0;
+    cursor:pointer;
+    transition:border-color 0.2s ease, color 0.2s ease;
+  }
+  .nav-toggle{ display:none; }
+  .sidebar-toggle:hover, .sidebar-toggle:focus-visible{
+    border-color:var(--gold);
+    color:var(--gold-bright);
+  }
+
+  /* ================= THEME TOGGLE ================= */
+  .theme-toggle{
+    position:relative;
+    display:flex;
+    align-items:center;
+    width:56px; height:30px;
+    flex-shrink:0;
+    border:1px solid var(--panel-line);
+    border-radius:999px;
+    background:var(--black-2);
+    cursor:pointer;
+    padding:0;
+    transition:border-color 0.2s ease;
+  }
+  .theme-toggle:hover, .theme-toggle:focus-visible{ border-color:var(--gold); }
+  .theme-toggle::before{
+    content:"";
+    position:absolute;
+    top:3px; left:3px;
+    width:22px; height:22px;
+    border-radius:50%;
+    background:var(--gold);
+    transition:transform 0.25s cubic-bezier(0.4,0,0.2,1);
+  }
+  :root[data-theme="light"] .theme-toggle::before{ transform:translateX(26px); }
+  .theme-toggle i{
+    position:relative;
+    z-index:1;
+    width:22px; height:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:0.68rem;
+    color:var(--black);
+    flex-shrink:0;
+  }
+  .theme-icon-sun{ margin-left:3px; }
+  .theme-icon-moon{ margin-left:auto; margin-right:3px; color:var(--cream-dim); }
+  :root[data-theme="light"] .theme-icon-sun{ color:var(--cream-dim); }
+  :root[data-theme="light"] .theme-icon-moon{ color:var(--black); }
+  .theme-toggle-label{ display:none; }
+
+  .theme-toggle-sidebar{
+    width:100%;
+    height:auto;
+    justify-content:flex-start;
+    gap:10px;
+    padding:10px 12px;
+    border-radius:6px;
+    margin-bottom:16px;
+  }
+  .theme-toggle-sidebar::before{ display:none; }
+  .theme-toggle-sidebar i{
+    position:static;
+    width:auto; height:auto;
+    color:var(--gold);
+    font-size:0.9rem;
+  }
+  .theme-toggle-sidebar .theme-icon-sun{ display:none; margin:0; }
+  .theme-toggle-sidebar .theme-icon-moon{ display:inline-flex; margin:0; color:var(--gold); }
+  :root[data-theme="light"] .theme-toggle-sidebar .theme-icon-sun{ display:inline-flex; }
+  :root[data-theme="light"] .theme-toggle-sidebar .theme-icon-moon{ display:none; }
+  .theme-toggle-label{
+    display:inline-block;
+    color:var(--cream);
+    font-size:0.92rem;
+  }
+  .theme-toggle-sidebar .theme-toggle-label{ display:inline-block; }
+  .theme-toggle-sidebar:hover, .theme-toggle-sidebar:focus-visible{
+    border-color:var(--gold);
+    background:var(--panel);
+  }
+
+  /* ================= SIDEBAR ================= */
+  .sidebar-backdrop{
+    position:fixed;
+    inset:0;
+    background:var(--overlay-72);
+    backdrop-filter:blur(2px);
+    z-index:150;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 0.3s ease;
+  }
+  .sidebar-backdrop.is-open{ opacity:1; pointer-events:auto; }
+
+  .sidebar{
+    position:fixed;
+    top:0; right:0;
+    height:100%;
+    width:min(340px, 86vw);
+    background:linear-gradient(165deg, var(--panel) 0%, var(--black-2) 60%, var(--black) 100%);
+    border-left:3px solid var(--gold);
+    box-shadow:-24px 0 70px var(--shadow);
+    z-index:151;
+    transform:translateX(100%);
+    transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);
+    display:flex;
+    flex-direction:column;
+    padding:28px 26px 30px;
+    overflow-y:auto;
+    scrollbar-width:thin;
+    scrollbar-color:var(--panel-line) transparent;
+  }
+  .sidebar::-webkit-scrollbar{ width:6px; }
+  .sidebar::-webkit-scrollbar-track{ background:transparent; }
+  .sidebar::-webkit-scrollbar-thumb{ background:var(--panel-line); border-radius:6px; }
+  .sidebar::-webkit-scrollbar-thumb:hover{ background:var(--bronze); }
+  .sidebar.is-open{ transform:translateX(0); }
+  .sidebar-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:30px;
+  }
+  .sidebar-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .sidebar-brand .sb-logo-frame{
+    height:36px; width:36px;
+    border-radius:0;
+    overflow:hidden;
+    flex-shrink:0;
+    display:block;
+  }
+  .sidebar-brand .sb-logo-frame img{
+    height:100%; width:100%;
+    object-fit:cover;
+    display:block;
+    transform:scale(1.32);
+  }
+  .sidebar-brand span{
+    font-family:'Playfair Display', serif;
+    color:var(--cream);
+    font-size:1.05rem;
+  }
+  .sidebar-close{
+    background:none;
+    border:1px solid var(--panel-line);
+    color:var(--cream);
+    width:38px; height:38px;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    flex-shrink:0;
+  }
+  .sidebar-close:hover, .sidebar-close:focus-visible{ border-color:var(--gold); color:var(--gold-bright); }
+  .sidebar-nav{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    margin-bottom:auto;
+  }
+  .sidebar-nav a{
+    color:var(--cream-dim);
+    font-size:1rem;
+    padding:14px 4px;
+    border-bottom:1px solid var(--panel-line);
+    display:flex;
+    align-items:center;
+    gap:12px;
+    transition:color 0.2s ease, padding-left 0.2s ease;
+  }
+  .sidebar-nav a i{ color:var(--gold); width:18px; font-size:0.9rem; }
+  .sidebar-nav a:hover, .sidebar-nav a:focus-visible{
+    color:var(--cream);
+    padding-left:8px;
+  }
+  .sidebar-foot{
+    margin-top:28px;
+    padding-top:22px;
+    border-top:1px solid var(--panel-line);
+    color:var(--cream-dim);
+    font-size:0.82rem;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .sidebar-foot .status-line{
+    display:flex;
+    align-items:center;
+  }
+  .sidebar-foot .status-dot{
+    display:inline-block;
+    width:7px; height:7px;
+    border-radius:50%;
+    background:var(--gold);
+    margin-right:8px;
+    flex-shrink:0;
+  }
+  .sidebar-foot .location-line{
+    padding-left:15px;
+    padding-bottom:14px;
+    border-bottom:1px solid var(--panel-line);
+  }
+  body.sidebar-locked{ overflow:hidden; }
+
+  /* ================= HERO ================= */
+  .hero{
+    position:relative;
+    padding:96px 0 84px;
+    overflow:hidden;
+    border-bottom:1px solid var(--panel-line);
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:40px;
+    align-items:center;
+  }
+  .hero-eyebrow{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:var(--gold);
+    font-size:0.85rem;
+    margin-bottom:22px;
+  }
+  .hero-eyebrow i{ font-size:0.8rem; }
+
+  .hero h1{
+    font-size:clamp(2.6rem, 5.4vw, 4.5rem);
+    color:var(--cream);
+    max-width:11ch;
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--gold-bright);
+  }
+
+  .hero p.lede{
+    margin-top:26px;
+    max-width:46ch;
+    color:var(--cream-dim);
+    font-size:1.07rem;
+  }
+
+  .hero-actions{
+    display:flex;
+    gap:16px;
+    margin-top:38px;
+    flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 28px;
+    font-size:0.95rem;
+    font-weight:600;
+    border:1px solid transparent;
+  }
+  .btn-primary{
+    background:var(--gold);
+    color:var(--black);
+  }
+  .btn-primary:hover{ background:var(--gold-bright); }
+  .btn-ghost{
+    border-color:var(--panel-line);
+    color:var(--cream);
+  }
+  .btn-ghost:hover{ border-color:var(--gold); color:var(--gold-bright); }
+
+  .hero-hours{
+    margin-top:44px;
+    display:flex;
+    gap:28px;
+    color:var(--cream-dim);
+    font-size:0.87rem;
+  }
+  .hero-hours strong{ color:var(--cream); font-weight:600; }
+
+  .hero-art{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .moon-ring{
+    position:relative;
+    width:100%;
+    max-width:440px;
+    aspect-ratio:1/1;
+    border:1px solid var(--rule);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:8%;
+  }
+  /* Large premium circular brand logo (separate from header logo) */
+  .moon-ring .brand-emblem{
+    width:100%;
+    height:100%;
+    aspect-ratio:1/1;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center;
+    border:2px solid var(--gold);
+    box-shadow:0 0 0 8px var(--overlay-ring), 0 0 0 9px rgba(220,173,83,0.18), 0 20px 60px var(--shadow);
+    display:block;
+  }
+  .hero-art .stars i{
+    position:absolute;
+    color:var(--gold);
+  }
+  .s1{ top:8%; left:14%; font-size:0.7rem; }
+  .s2{ top:20%; right:10%; font-size:0.5rem; }
+  .s3{ bottom:14%; left:6%; font-size:0.55rem; }
+  .s4{ bottom:26%; right:4%; font-size:0.65rem; }
+
+  /* ================= MARQUEE STRIP ================= */
+  .strip{
+    background:var(--panel);
+    border-bottom:1px solid var(--panel-line);
+    padding:16px 0;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  .strip-track{
+    display:flex;
+    width:max-content;
+    animation:scroll-strip 46s linear infinite;
+    will-change:transform;
+  }
+  .strip-group{
+    display:flex;
+    flex-shrink:0;
+    gap:56px;
+    padding-right:56px;
+  }
+  .strip-track span{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    color:var(--gold);
+    font-family:'Playfair Display', serif;
+    font-style:italic;
+    font-size:1.05rem;
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+  .strip-track span i{ color:var(--bronze); font-size:0.85rem; }
+  @keyframes scroll-strip{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-33.3333%); }
+  }
+
+  /* ================= SECTION SHELL ================= */
+  section{ padding:100px 0; }
+  .section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    margin-bottom:56px;
+    flex-wrap:wrap;
+  }
+  .kicker{
+    color:var(--gold);
+    font-size:0.85rem;
+    display:flex;
+    align-items:center;
+    gap:9px;
+    margin-bottom:14px;
+  }
+  .section-head h2{
+    font-size:clamp(1.5rem, 3.6vw, 2.8rem);
+    color:var(--cream);
+    max-width:none;
+    white-space:nowrap;
+  }
+  .section-head p{
+    max-width:36ch;
+    color:var(--cream-dim);
+    font-size:0.98rem;
+  }
+
+
+  /* ================= ABOUT ================= */
+  .about{ border-bottom:1px solid var(--panel-line); }
+  .about-grid{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:64px;
+    align-items:stretch;
+  }
+  .about-copy{
+    display:flex;
+    flex-direction:column;
+  }
+  .about-figure{
+    border:1px solid var(--panel-line);
+    padding:44px 32px;
+    text-align:center;
+    background:var(--panel);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:28px;
+  }
+  .about-figure img{
+    width:150px;
+    margin:0 auto;
+  }
+  .about-figure .quote{
+    font-family:'Playfair Display', serif;
+    font-style:italic;
+    color:var(--cream);
+    font-size:1.4rem;
+    line-height:1.55;
+    max-width:32ch;
+  }
+  .about-figure .quote-by{
+    margin-top:4px;
+    font-size:0.9rem;
+    letter-spacing:0.03em;
+    color:var(--gold);
+  }
+
+  .about-copy p{
+    color:var(--cream-dim);
+    max-width:58ch;
+    margin-bottom:20px;
+    font-size:1rem;
+  }
+  .about-stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:0;
+    margin-top:auto;
+    padding-top:40px;
+    border-top:1px solid var(--panel-line);
+  }
+  .about-stats div{
+    padding:24px 20px 0;
+    border-right:1px solid var(--panel-line);
+  }
+  .about-stats div:last-child{ border-right:none; }
+  .about-stats .num{
+    font-size:1.7rem;
+    color:var(--gold-bright);
+  }
+  .about-stats .label{
+    font-size:0.82rem;
+    color:var(--cream-dim);
+    margin-top:4px;
+  }
+
+  /* ================= EXPERIENCE (CAFE / SALON / GYM) ================= */
+  .experience{ background:var(--black-2); border-bottom:1px solid var(--panel-line); }
+  .experience-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1px;
+    background:var(--panel-line);
+    border:1px solid var(--panel-line);
+  }
+  .experience-card{
+    background:var(--black-2);
+    padding:40px 34px;
+  }
+  .experience-card i.card-icon{
+    color:var(--gold);
+    font-size:1.6rem;
+    margin-bottom:22px;
+    display:block;
+  }
+  .experience-card h3{
+    color:var(--cream);
+    font-size:1.35rem;
+    margin-bottom:14px;
+  }
+  .experience-card p{
+    color:var(--cream-dim);
+    font-size:0.95rem;
+    margin-bottom:18px;
+  }
+  .experience-card ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+  }
+  .experience-card ul li{
+    color:var(--cream-dim);
+    font-size:0.88rem;
+    display:flex;
+    align-items:flex-start;
+    gap:9px;
+  }
+  .experience-card ul li i{
+    color:var(--bronze);
+    font-size:0.7rem;
+    margin-top:6px;
+  }
+
+  /* ================= OPEN KITCHEN FEATURE ================= */
+  .open-kitchen{
+    padding:64px 0;
+    text-align:center;
+  }
+  .open-kitchen .kitchen-inner{
+    max-width:56ch;
+    margin:0 auto;
+  }
+  .open-kitchen i.feature-icon{
+    color:var(--gold);
+    font-size:1.8rem;
+    margin-bottom:18px;
+    display:block;
+  }
+  .open-kitchen h3{
+    color:var(--cream);
+    font-size:1.6rem;
+    margin-bottom:14px;
+  }
+  .open-kitchen p{
+    color:var(--cream-dim);
+    font-size:1rem;
+  }
+
+  /* ================= MENU ================= */
+  .menu{ background:var(--black-2); border-bottom:1px solid var(--panel-line); }
+  .menu-tabs{
+    display:flex;
+    gap:10px;
+    margin-bottom:44px;
+    flex-wrap:wrap;
+  }
+  .menu-tab{
+    border:1px solid var(--panel-line);
+    padding:9px 18px;
+    font-size:0.86rem;
+    color:var(--cream-dim);
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .menu-tab.is-active{
+    border-color:var(--gold);
+    color:var(--gold-bright);
+  }
+  .menu-cols{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0 72px;
+  }
+  .menu-list{ list-style:none; }
+  .menu-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+    padding:20px 0;
+    border-bottom:1px solid var(--panel-line);
+  }
+  .menu-item:first-child{ padding-top:0; }
+  .menu-item-name{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  .menu-item-name i{
+    color:var(--bronze);
+    font-size:0.85rem;
+    width:16px;
+  }
+  .menu-item-title{
+    font-family:'Playfair Display', serif;
+    font-size:1.1rem;
+    color:var(--cream);
+  }
+  .menu-item-desc{
+    display:block;
+    font-size:0.85rem;
+    color:var(--cream-dim);
+    margin-top:4px;
+    max-width:38ch;
+  }
+  .menu-item-price{
+    font-family:'Playfair Display', serif;
+    font-style:italic;
+    color:var(--gold);
+    white-space:nowrap;
+  }
+
+  /* ================= GALLERY ================= */
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(6, minmax(0, 1fr));
+    grid-template-rows:repeat(2, 200px);
+    gap:14px;
+  }
+  .gallery-grid > div{ min-width:0; min-height:0; }
+  .g-item-1{ grid-column:1 / 4; grid-row:1 / 3; }
+  .g-item-2{ grid-column:4 / 7; grid-row:1 / 2; }
+  .g-item-3{ grid-column:4 / 5; grid-row:2 / 3; }
+  .g-item-4{ grid-column:5 / 6; grid-row:2 / 3; }
+  .g-item-5{ grid-column:6 / 7; grid-row:2 / 3; }
+
+  /* ================= CAREERS ================= */
+  .careers{ background:var(--black-2); border-bottom:1px solid var(--panel-line); }
+  .careers-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1px;
+    background:var(--panel-line);
+    border:1px solid var(--panel-line);
+    margin-bottom:44px;
+  }
+  .job-card{
+    background:var(--black-2);
+    padding:32px 28px;
+    display:flex;
+    flex-direction:column;
+  }
+  .job-card .job-title{
+    color:var(--cream);
+    font-family:'Playfair Display', serif;
+    font-size:1.2rem;
+    margin-bottom:6px;
+  }
+  .job-card .job-count{
+    color:var(--gold);
+    font-size:0.82rem;
+    margin-bottom:18px;
+  }
+  .job-card ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:auto;
+  }
+  .job-card ul li{
+    color:var(--cream-dim);
+    font-size:0.86rem;
+    display:flex;
+    align-items:flex-start;
+    gap:9px;
+  }
+  .job-card ul li i{ color:var(--bronze); font-size:0.65rem; margin-top:6px; }
+
+  .qualities-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:40px;
+  }
+  .quality-pill{
+    border:1px solid var(--panel-line);
+    padding:9px 18px;
+    font-size:0.85rem;
+    color:var(--cream-dim);
+  }
+
+  .apply-cta{
+    text-align:center;
+    padding:44px 0 0;
+    border-top:1px solid var(--panel-line);
+  }
+  .apply-cta p{ color:var(--cream-dim); margin-bottom:22px; font-size:0.95rem; }
+
+  /* ================= APPLICATION MODAL ================= */
+  .apply-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:100;
+    background:var(--overlay-85);
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .apply-modal.is-open{ display:flex; }
+  .apply-modal-panel{
+    background:var(--panel);
+    border:1px solid var(--panel-line);
+    max-width:480px;
+    width:100%;
+    max-height:86vh;
+    overflow-y:auto;
+    padding:36px;
+    position:relative;
+    scrollbar-width:thin;
+    scrollbar-color:var(--panel-line) transparent;
+  }
+  .apply-modal-panel::-webkit-scrollbar{ width:6px; }
+  .apply-modal-panel::-webkit-scrollbar-track{ background:transparent; }
+  .apply-modal-panel::-webkit-scrollbar-thumb{ background:var(--panel-line); border-radius:6px; }
+  .apply-modal-panel::-webkit-scrollbar-thumb:hover{ background:var(--bronze); }
+  .apply-modal-close{
+    position:absolute;
+    top:18px; right:18px;
+    background:none;
+    border:1px solid var(--panel-line);
+    color:var(--cream);
+    width:36px; height:36px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .apply-modal-close:hover{ border-color:var(--gold); color:var(--gold-bright); }
+  .apply-modal h3{
+    color:var(--cream);
+    font-size:1.4rem;
+    margin-bottom:10px;
+    padding-right:30px;
+  }
+  .apply-modal .modal-note{
+    padding:14px 16px;
+    border-left:2px solid var(--gold);
+    background:var(--black-2);
+    color:var(--cream-dim);
+    font-size:0.86rem;
+    margin-bottom:26px;
+  }
+  .apply-field{ margin-bottom:18px; }
+  .apply-field label{
+    display:block;
+    font-size:0.8rem;
+    color:var(--cream-dim);
+    margin-bottom:7px;
+  }
+  .apply-field input, .apply-field select, .apply-field textarea{
+    width:100%;
+    background:var(--black-2);
+    border:1px solid var(--panel-line);
+    color:var(--cream);
+    padding:11px 13px;
+    font-family:'Work Sans', sans-serif;
+    font-size:0.92rem;
+  }
+  .apply-field textarea{ resize:vertical; min-height:80px; }
+  .apply-field input:focus, .apply-field select:focus, .apply-field textarea:focus{
+    outline:2px solid var(--gold-bright);
+    outline-offset:2px;
+  }
+  .apply-modal .btn{ width:100%; justify-content:center; }
+
+  /* ================= HOURS / LOCATION ================= */
+  .visit{ border-bottom:1px solid var(--panel-line); }
+  .visit-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:56px;
+    align-items:stretch;
+  }
+  .visit-map-col{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+  }
+  .visit-map-col .map-card{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+  }
+  .visit-map-col .map-card .map-frame-wrap{
+    flex:1;
+    aspect-ratio:auto;
+    min-height:220px;
+  }
+  .contact-card-inline{
+    margin-top:14px;
+    padding:0 22px;
+  }
+  .hours-table{
+    width:100%;
+    border-collapse:collapse;
+  }
+  .hours-table tr{ border-bottom:1px solid var(--panel-line); }
+  .hours-table tr:first-child td, .hours-table tr:first-child th{ padding-top:0; }
+  .hours-table th, .hours-table td{
+    text-align:left;
+    padding:16px 0;
+    font-size:0.95rem;
+    font-weight:400;
+  }
+  .hours-table th{
+    color:var(--cream);
+    font-weight:500;
+  }
+  .hours-table td{
+    text-align:right;
+    color:var(--gold);
+    font-family:'Playfair Display', serif;
+    font-style:italic;
+  }
+  .hours-table tr.is-tonight th,
+  .hours-table tr.is-tonight td{ color:var(--gold-bright); }
+
+  .visit-note{
+    margin-top:28px;
+    padding:18px 20px;
+    border-left:2px solid var(--gold);
+    background:var(--panel);
+    font-size:0.9rem;
+    color:var(--cream-dim);
+  }
+  .visit-note i{ color:var(--gold); margin-right:8px; }
+
+  .contact-card{
+    border:1px solid var(--panel-line);
+    background:var(--panel);
+    padding:40px;
+  }
+  .contact-row{
+    display:flex;
+    gap:14px;
+    padding:10px 0;
+    border-bottom:1px solid var(--panel-line);
+  }
+  .contact-card-inline .contact-row{
+    padding:7px 0;
+  }
+  .contact-row:last-of-type{ border-bottom:none; }
+  .contact-row i{
+    color:var(--gold);
+    font-size:1rem;
+    width:20px;
+    margin-top:3px;
+  }
+  .contact-card-inline .contact-row .label{
+    margin-bottom:1px;
+  }
+  .contact-card-inline .contact-row i{
+    margin-top:2px;
+  }
+  .contact-row .label{
+    font-size:0.78rem;
+    color:var(--cream-dim);
+    margin-bottom:4px;
+    letter-spacing:0.03em;
+  }
+  .contact-row .value{
+    color:var(--cream);
+    font-size:1rem;
+  }
+  .contact-map{
+    margin-top:24px;
+    border:1px solid var(--panel-line);
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--bronze);
+    font-size:1.8rem;
+    background:repeating-linear-gradient(45deg, var(--black-2), var(--black-2) 10px, var(--panel) 10px, var(--panel) 20px);
+    position:relative;
+  }
+
+  .social-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:24px;
+  }
+  .social-row a, .social-row .social-soon{
+    width:42px; height:42px;
+    border:1px solid var(--panel-line);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--cream-dim);
+    position:relative;
+    transition:border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+  .social-row a:hover, .social-row a:focus-visible{
+    border-color:var(--gold);
+    color:var(--gold-bright);
+    transform:translateY(-2px);
+  }
+  .social-row .social-soon{
+    cursor:default;
+    opacity:0.55;
+  }
+  .social-row .social-soon::after{
+    content:"Coming soon";
+    position:absolute;
+    bottom:calc(100% + 8px);
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--black-2);
+    border:1px solid var(--panel-line);
+    color:var(--cream-dim);
+    font-size:0.68rem;
+    padding:5px 9px;
+    white-space:nowrap;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 0.2s ease;
+  }
+  .social-row .social-soon:hover::after,
+  .social-row .social-soon:focus-visible::after{ opacity:1; }
+  .social-row a[title]{ position:relative; }
+
+  /* ================= MAP ================= */
+  .map-card{
+    margin-top:24px;
+    border:1px solid var(--panel-line);
+    background:var(--black-2);
+    overflow:hidden;
+  }
+  .map-frame-wrap{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/10;
+    background:repeating-linear-gradient(45deg, var(--black-2), var(--black-2) 10px, var(--panel) 10px, var(--panel) 20px);
+  }
+  .map-frame-wrap iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+    filter:var(--map-filter);
+  }
+  .map-pin-note{
+    position:absolute;
+    left:50%; top:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:var(--cream-dim);
+    font-size:0.82rem;
+    pointer-events:none;
+  }
+  .map-pin-note i{ color:var(--gold); font-size:1.7rem; display:block; margin-bottom:8px; }
+  .map-actions{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    padding:16px 18px;
+    border-top:1px solid var(--panel-line);
+  }
+  .map-actions .map-note{ font-size:0.78rem; color:var(--cream-dim); }
+  .map-open-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    border:1px solid var(--gold);
+    color:var(--gold-bright);
+    padding:9px 16px;
+    font-size:0.82rem;
+    font-weight:600;
+    white-space:nowrap;
+    transition:background 0.2s ease, color 0.2s ease;
+  }
+  .map-open-btn:hover, .map-open-btn:focus-visible{ background:var(--gold); color:var(--black); }
+
+  /* ================= GALLERY (fixed) ================= */
+  .gallery-card{
+    position:relative;
+    border:1px solid var(--panel-line);
+    background:var(--panel);
+    overflow:hidden;
+    border-radius:6px;
+    cursor:pointer;
+    padding:0;
+    display:block;
+    width:100%;
+    height:100%;
+    text-align:left;
+    font:inherit;
+    color:inherit;
+  }
+  .gallery-card:focus-visible{ outline:2px solid var(--gold-bright); outline-offset:2px; }
+  .gallery-card .g-media{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    transition:transform 0.5s ease;
+  }
+  .gallery-card .g-placeholder{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--gold-bright);
+    font-size:1.6rem;
+    background:linear-gradient(160deg, var(--panel), var(--black-2));
+  }
+  .gallery-card:hover .g-media{ transform:scale(1.06); }
+  .gallery-card .g-label{
+    position:absolute;
+    left:0; right:0; bottom:0;
+    padding:26px 14px 12px;
+    background:linear-gradient(to top, var(--gallery-fade), transparent);
+    font-size:0.78rem;
+    color:var(--gallery-label-text);
+    font-family:'Work Sans', sans-serif;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .gallery-card .g-label i{ color:var(--gold-bright); font-size:0.72rem; }
+  .gallery-card .g-zoom{
+    position:absolute;
+    top:12px; right:12px;
+    width:32px; height:32px;
+    border-radius:6px;
+    border:1px solid var(--hairline-30);
+    background:var(--overlay-60);
+    color:var(--cream);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:0.8rem;
+    opacity:0;
+    transition:opacity 0.2s ease;
+  }
+  .gallery-card:hover .g-zoom, .gallery-card:focus-visible .g-zoom{ opacity:1; }
+
+  /* ================= BACK TO TOP ================= */
+  .back-to-top{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    border:1px solid var(--panel-line);
+    background:var(--gold);
+    color:var(--black);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.05rem;
+    cursor:pointer;
+    z-index:60;
+    box-shadow:0 8px 20px var(--shadow-strong);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(12px);
+    transition:opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, background 0.2s ease;
+  }
+  .back-to-top.is-visible{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+  }
+  .back-to-top:hover, .back-to-top:focus-visible{
+    background:var(--gold-bright);
+  }
+  @media (max-width:640px){
+    .back-to-top{
+      right:16px;
+      bottom:16px;
+      width:42px;
+      height:42px;
+      font-size:0.95rem;
+    }
+  }
+
+  /* ================= LIGHTBOX ================= */
+  .lightbox{
+    position:fixed;
+    inset:0;
+    z-index:200;
+    background:var(--overlay-92);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+    backdrop-filter:blur(4px);
+  }
+  .lightbox.is-open{ display:flex; }
+  .lightbox-panel{
+    position:relative;
+    max-width:820px;
+    width:100%;
+    max-height:86vh;
+    background:var(--panel);
+    border:1px solid var(--panel-line);
+    overflow:hidden;
+  }
+  .lightbox-media-wrap{
+    width:100%;
+    aspect-ratio:16/10;
+    position:relative;
+    background:var(--black-2);
+  }
+  .lightbox-media-wrap img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .lightbox-media-wrap .g-placeholder{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--gold-bright);
+    font-size:2.4rem;
+    background:linear-gradient(160deg, #17130f, #0A0809);
+  }
+  .lightbox-caption{
+    padding:18px 22px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:var(--cream);
+    font-size:0.98rem;
+  }
+  .lightbox-caption i{ color:var(--gold); }
+  .lightbox-close{
+    position:absolute;
+    top:14px; right:14px;
+    width:38px; height:38px;
+    border-radius:6px;
+    background:var(--overlay-75);
+    border:1px solid var(--hairline-30);
+    color:var(--cream);
+    display:flex; align-items:center; justify-content:center;
+    z-index:2;
+    cursor:pointer;
+    box-shadow:0 4px 14px var(--shadow-strong);
+  }
+  .lightbox-close:hover, .lightbox-close:focus-visible{ border-color:var(--gold); color:var(--gold-bright); }
+
+  /* ================= NOVIQUE / DEV POPUP ================= */
+  .dev-popup{
+    position:fixed;
+    inset:0;
+    z-index:210;
+    background:var(--overlay-82);
+    backdrop-filter:blur(4px);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .dev-popup.is-open{ display:flex; }
+  .dev-popup-panel{
+    position:relative;
+    max-width:440px;
+    width:100%;
+    max-height:88vh;
+    overflow-y:auto;
+    scrollbar-width:thin;
+    scrollbar-color:var(--panel-line) transparent;
+    background:linear-gradient(165deg, var(--panel) 0%, var(--black-2) 60%, var(--black) 100%);
+    border:1px solid var(--panel-line);
+    border-left:3px solid var(--gold);
+    padding:38px 32px;
+    box-shadow:0 24px 70px var(--shadow-strong);
+    animation:dev-pop-in 0.3s cubic-bezier(0.4,0,0.2,1);
+  }
+  .dev-popup-panel::-webkit-scrollbar{ width:6px; }
+  .dev-popup-panel::-webkit-scrollbar-track{ background:transparent; }
+  .dev-popup-panel::-webkit-scrollbar-thumb{ background:var(--panel-line); border-radius:6px; }
+  .dev-popup-panel::-webkit-scrollbar-thumb:hover{ background:var(--bronze); }
+  @keyframes dev-pop-in{
+    from{ opacity:0; transform:translateY(12px) scale(0.98); }
+    to{ opacity:1; transform:translateY(0) scale(1); }
+  }
+  .dev-popup-close{
+    position:absolute;
+    top:16px; right:16px;
+    width:36px; height:36px;
+    background:none;
+    border:1px solid var(--panel-line);
+    color:var(--cream);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+  }
+  .dev-popup-close:hover, .dev-popup-close:focus-visible{ border-color:var(--gold); color:var(--gold-bright); }
+  .dev-popup-heart{ color:var(--gold); }
+  .dev-popup h3{
+    color:var(--cream);
+    font-size:1.35rem;
+    margin-bottom:8px;
+    padding-right:26px;
+    line-height:1.3;
+  }
+  .dev-popup .dev-sub{
+    color:var(--cream-dim);
+    font-size:0.85rem;
+    margin-bottom:24px;
+  }
+  .dev-contact-row{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:14px 4px;
+    border-top:1px solid var(--panel-line);
+    transition:padding-left 0.2s ease;
+  }
+  .dev-contact-row:last-of-type{ border-bottom:1px solid var(--panel-line); margin-bottom:26px; }
+  .dev-contact-row i{ color:var(--gold); font-size:1rem; width:20px; }
+  .dev-contact-row a{
+    color:var(--cream);
+    font-size:0.95rem;
+    word-break:break-word;
+  }
+  .dev-contact-row a:hover, .dev-contact-row a:focus-visible{ color:var(--gold-bright); }
+  .dev-contact-row:has(a:hover), .dev-contact-row:has(a:focus-visible){ padding-left:10px; }
+  .dev-popup .btn{ width:100%; justify-content:center; }
+  .dev-note{
+    margin-top:18px;
+    font-size:0.74rem;
+    color:var(--cream-dim);
+    text-align:center;
+    line-height:1.5;
+  }
+
+  /* ================= FOOTER SHOWCASE CREDIT ================= */
+  .footer-showcase{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    padding-top:18px;
+    margin-top:18px;
+    border-top:1px solid var(--panel-line);
+    font-size:0.8rem;
+    color:var(--cream-dim);
+  }
+  .footer-showcase a, .footer-showcase button{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    color:var(--cream-dim);
+    background:none;
+    border:none;
+    font:inherit;
+    cursor:pointer;
+    padding:2px 4px;
+  }
+  .footer-showcase a:hover, .footer-showcase a:focus-visible,
+  .footer-showcase button:hover, .footer-showcase button:focus-visible{ color:var(--gold-bright); }
+  .footer-showcase i{ color:var(--gold); }
+  .footer-showcase .divider{ color:var(--panel-line); }
+
+  /* ================= REVIEWS ================= */
+  .reviews{ background:var(--black-2); border-bottom:1px solid var(--panel-line); }
+  .review-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1px;
+    background:var(--panel-line);
+    border:1px solid var(--panel-line);
+  }
+  .review-card{
+    background:var(--black-2);
+    padding:34px 30px;
+  }
+  .review-stars{
+    color:var(--gold);
+    font-size:0.8rem;
+    margin-bottom:16px;
+    letter-spacing:2px;
+  }
+  .review-text{
+    color:var(--cream-dim);
+    font-size:0.95rem;
+    line-height:1.65;
+    margin-bottom:22px;
+  }
+  .review-by{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:0.85rem;
+    color:var(--cream);
+  }
+  .review-by i{ color:var(--bronze); }
+
+  /* ================= CTA BAND ================= */
+  .cta-band{
+    padding:90px 0;
+    text-align:center;
+    position:relative;
+  }
+  .cta-band img{
+    width:64px;
+    margin:0 auto 24px;
+  }
+  .cta-band h2{
+    font-size:clamp(2rem, 4vw, 3.1rem);
+    color:var(--cream);
+    max-width:none;
+    margin:0 auto 18px;
+  }
+  .cta-band h2 .cta-subline{
+    display:block;
+    white-space:nowrap;
+  }
+  .cta-band p{
+    color:var(--cream-dim);
+    max-width:44ch;
+    margin:0 auto 36px;
+  }
+  .cta-actions{
+    display:flex;
+    gap:16px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  /* ================= FOOTER ================= */
+  footer{
+    padding:56px 0 32px;
+    background:var(--panel);
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr 1fr;
+    gap:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid var(--panel-line);
+  }
+  .footer-brand{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    margin-bottom:16px;
+  }
+  .footer-brand img{ height:38px; width:38px; }
+  .footer-brand .name{
+    font-family:'Playfair Display', serif;
+    font-size:1.1rem;
+    color:var(--cream);
+  }
+  .footer-col p{ color:var(--cream-dim); font-size:0.9rem; max-width:30ch; }
+  .footer-col h4{
+    font-family:'Work Sans', sans-serif;
+    font-size:0.82rem;
+    font-weight:600;
+    color:var(--cream);
+    letter-spacing:0.03em;
+    margin-bottom:16px;
+  }
+  .footer-col ul{ list-style:none; }
+  .footer-col li{ margin-bottom:11px; }
+  .footer-col a{ color:var(--cream-dim); font-size:0.9rem; }
+  .footer-col a:hover{ color:var(--gold-bright); }
+
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:28px;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  .footer-bottom p{
+    color:var(--cream-dim);
+    font-size:0.82rem;
+  }
+  .footer-bottom .made{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--cream-dim);
+    font-size:0.82rem;
+  }
+  .footer-bottom .made i{ color:var(--gold); }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 1024px){
+    .wrap{ padding:0 22px; }
+    .hero-grid{ gap:32px; }
+  }
+  @media (max-width: 920px){
+    .nav{ grid-template-columns:auto auto 1fr; }
+    .nav-links{ display:none; }
+    .nav-toggle{ display:none !important; }
+    .brand-text .name{ font-size:1.1rem; }
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero-art{ order:-1; max-width:280px; margin:0 auto 20px; }
+    .about-grid, .visit-grid{ grid-template-columns:1fr; align-items:start; }
+    .about-stats{ margin-top:40px; }
+    .about-figure img{ width:110px; }
+    .about-figure .quote{ font-size:1.15rem; max-width:none; }
+    .visit-map-col .map-card .map-frame-wrap{ aspect-ratio:16/10; }
+    .menu-cols{ grid-template-columns:1fr; gap:0; }
+    .review-grid{ grid-template-columns:1fr; }
+    .experience-grid, .careers-grid{ grid-template-columns:1fr; }
+    .gallery-grid{
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      grid-template-rows:repeat(4, 190px);
+    }
+    .g-item-1{ grid-column:1 / 3; grid-row:1 / 2; }
+    .g-item-2{ grid-column:1 / 3; grid-row:2 / 3; }
+    .g-item-3{ grid-column:1 / 2; grid-row:3 / 4; }
+    .g-item-4{ grid-column:2 / 3; grid-row:3 / 4; }
+    .g-item-5{ grid-column:1 / 3; grid-row:4 / 5; }
+    .footer-grid{ grid-template-columns:1fr 1fr; }
+    .about-stats{ grid-template-columns:1fr; }
+    .about-stats div{ border-right:none; border-bottom:1px solid var(--panel-line); padding-bottom:20px; }
+  }
+  @media (max-width: 560px){
+    .section-head h2{ white-space:normal; font-size:clamp(1.5rem, 6vw, 2rem); }
+    .cta-band h2 .cta-subline{ white-space:normal; }
+    .hero{ padding:56px 0 48px; }
+    section{ padding:56px 0; }
+    .hero-hours{ flex-direction:column; gap:8px; }
+    .footer-grid{ grid-template-columns:1fr; }
+    .gallery-grid{
+      grid-template-columns:1fr 1fr;
+      grid-template-rows:repeat(4, 150px);
+    }
+    .g-item-1{ grid-column:1 / 3; grid-row:1 / 2; }
+    .g-item-2{ grid-column:1 / 3; grid-row:2 / 3; }
+    .g-item-3{ grid-column:1 / 2; grid-row:3 / 4; }
+    .g-item-4{ grid-column:2 / 3; grid-row:3 / 4; }
+    .g-item-5{ grid-column:1 / 3; grid-row:4 / 5; }
+    .cta-actions .btn{ width:100%; justify-content:center; }
+    .hero-actions .btn{ width:100%; justify-content:center; }
+    .brand-logo-frame{ height:36px; width:36px; }
+    .brand-text .name{ font-size:0.98rem; }
+    .brand-text .tag{ display:none; }
+    .theme-toggle:not(.theme-toggle-sidebar){ width:48px; height:26px; }
+    .theme-toggle:not(.theme-toggle-sidebar)::before{ width:18px; height:18px; }
+    :root[data-theme="light"] .theme-toggle:not(.theme-toggle-sidebar)::before{ transform:translateX(22px); }
+    .theme-toggle:not(.theme-toggle-sidebar) i{ width:18px; height:18px; font-size:0.6rem; }
+    .sidebar{ width:100%; max-width:100%; }
+    .dev-popup-panel{ padding:30px 22px; }
+    .map-actions{ flex-direction:column; align-items:stretch; }
+    .map-open-btn{ justify-content:center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <span class="brand-logo-frame"><img src="https://i.ibb.co/1fkXTF5T/afterdark-cafelogo.png" alt="AfterDark Cafe logo" class="brand-logo"></span>
+      <div class="brand-text">
+        <span class="name">AfterDark</span>
+        <span class="tag">C A F E</span>
+      </div>
+    </div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Cafe</a>
+      <a href="#experience">Salon</a>
+      <a href="#experience">Gym</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#careers">Careers</a>
+      <a href="#visit">Location</a>
+    </nav>
+    <div class="nav-end">
+      <button class="theme-toggle" id="themeToggleBtn" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <i class="fa-solid fa-sun theme-icon-sun"></i>
+        <i class="fa-solid fa-moon theme-icon-moon"></i>
+      </button>
+      <button class="sidebar-toggle" id="sidebarOpenBtn" aria-label="Open navigation menu" aria-haspopup="true" aria-controls="sideNav" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+<aside class="sidebar" id="sideNav" aria-label="Site navigation" aria-hidden="true">
+  <div class="sidebar-head">
+    <div class="sidebar-brand">
+      <span class="sb-logo-frame"><img src="https://i.ibb.co/1fkXTF5T/afterdark-cafelogo.png" alt="AfterDark Cafe logo"></span>
+      <span>AfterDark</span>
+    </div>
+    <button class="sidebar-close" id="sidebarCloseBtn" aria-label="Close navigation menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="sidebar-nav" aria-label="Sidebar navigation">
+    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#about"><i class="fa-solid fa-compass"></i> About</a>
+    <a href="#experience"><i class="fa-solid fa-mug-hot"></i> Cafe</a>
+    <a href="#experience"><i class="fa-solid fa-scissors"></i> Salon</a>
+    <a href="#experience"><i class="fa-solid fa-dumbbell"></i> Gym</a>
+    <a href="#menu"><i class="fa-solid fa-book-open"></i> Menu</a>
+    <a href="#gallery"><i class="fa-solid fa-image"></i> Gallery</a>
+    <a href="#careers"><i class="fa-solid fa-user-group"></i> Careers</a>
+    <a href="#visit"><i class="fa-solid fa-location-dot"></i> Location</a>
+  </nav>
+  <div class="sidebar-foot">
+    <button class="theme-toggle theme-toggle-sidebar" id="themeToggleBtnMobile" type="button" aria-label="Switch to light mode" aria-pressed="false">
+      <i class="fa-solid fa-sun theme-icon-sun"></i>
+      <i class="fa-solid fa-moon theme-icon-moon"></i>
+      <span class="theme-toggle-label">Light mode</span>
+    </button>
+    <span class="status-line"><span class="status-dot"></span>Opening soon</span>
+    <span class="location-line">Dharmanagar, North Tripura</span>
+  </div>
+</aside>
+
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-eyebrow"><i class="fa-solid fa-location-dot"></i> Dharmanagar, North Tripura</div>
+      <h1>AfterDark Cafe: <em>more than just a cafe.</em></h1>
+      <p class="lede">A complete lifestyle destination, bringing premium cafe experiences, wholesome food, fitness-focused options, a premium unisex salon and a unisex gym, all in one place.</p>
+      <div class="hero-actions">
+        <a href="#experience" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Explore AfterDark</a>
+        <a href="#about" class="btn btn-ghost"><i class="fa-solid fa-hourglass-half"></i> Discover the Experience</a>
+      </div>
+      <div class="hero-hours">
+        <div><strong>Status</strong> Opening soon</div>
+        <div><strong>First of its kind</strong> in Dharmanagar</div>
+        <div><strong>Eat</strong> / <strong>Train</strong> / <strong>Glow</strong></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="moon-ring">
+        <img src="https://i.ibb.co/1fkXTF5T/afterdark-cafelogo.png" alt="AfterDark Cafe large emblem" class="brand-emblem">
+        <div class="stars">
+          <i class="fa-solid fa-star s1"></i>
+          <i class="fa-solid fa-star s2"></i>
+          <i class="fa-solid fa-star s3"></i>
+          <i class="fa-solid fa-star s4"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <div class="strip-group">
+      <span><i class="fa-solid fa-mug-hot"></i> Cafe</span>
+      <span><i class="fa-solid fa-scissors"></i> Premium unisex salon</span>
+      <span><i class="fa-solid fa-dumbbell"></i> Unisex gym</span>
+      <span><i class="fa-solid fa-leaf"></i> Health + body + looks</span>
+      <span><i class="fa-solid fa-location-dot"></i> Dharmanagar, North Tripura</span>
+      <span><i class="fa-solid fa-mug-hot"></i> Cafe</span>
+      <span><i class="fa-solid fa-scissors"></i> Premium unisex salon</span>
+      <span><i class="fa-solid fa-dumbbell"></i> Unisex gym</span>
+      <span><i class="fa-solid fa-leaf"></i> Health + body + looks</span>
+      <span><i class="fa-solid fa-location-dot"></i> Dharmanagar, North Tripura</span>
+    </div>
+    <div class="strip-group" aria-hidden="true">
+      <span><i class="fa-solid fa-mug-hot"></i> Cafe</span>
+      <span><i class="fa-solid fa-scissors"></i> Premium unisex salon</span>
+      <span><i class="fa-solid fa-dumbbell"></i> Unisex gym</span>
+      <span><i class="fa-solid fa-leaf"></i> Health + body + looks</span>
+      <span><i class="fa-solid fa-location-dot"></i> Dharmanagar, North Tripura</span>
+      <span><i class="fa-solid fa-mug-hot"></i> Cafe</span>
+      <span><i class="fa-solid fa-scissors"></i> Premium unisex salon</span>
+      <span><i class="fa-solid fa-dumbbell"></i> Unisex gym</span>
+      <span><i class="fa-solid fa-leaf"></i> Health + body + looks</span>
+      <span><i class="fa-solid fa-location-dot"></i> Dharmanagar, North Tripura</span>
+    </div>
+    <div class="strip-group" aria-hidden="true">
+      <span><i class="fa-solid fa-mug-hot"></i> Cafe</span>
+      <span><i class="fa-solid fa-scissors"></i> Premium unisex salon</span>
+      <span><i class="fa-solid fa-dumbbell"></i> Unisex gym</span>
+      <span><i class="fa-solid fa-leaf"></i> Health + body + looks</span>
+      <span><i class="fa-solid fa-location-dot"></i> Dharmanagar, North Tripura</span>
+      <span><i class="fa-solid fa-mug-hot"></i> Cafe</span>
+      <span><i class="fa-solid fa-scissors"></i> Premium unisex salon</span>
+      <span><i class="fa-solid fa-dumbbell"></i> Unisex gym</span>
+      <span><i class="fa-solid fa-leaf"></i> Health + body + looks</span>
+      <span><i class="fa-solid fa-location-dot"></i> Dharmanagar, North Tripura</span>
+    </div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-figure">
+      <img src="https://i.ibb.co/1fkXTF5T/afterdark-cafelogo.png" alt="AfterDark Cafe emblem">
+      <p class="quote">"Good food, healthy you, better tomorrow: a new experience in North Tripura."</p>
+      <p class="quote-by">Opening soon in Dharmanagar</p>
+    </div>
+    <div class="about-copy">
+      <div class="kicker" style="color:var(--gold); font-size:0.85rem; display:flex; align-items:center; gap:9px; margin-bottom:14px;"><i class="fa-solid fa-compass"></i> A new lifestyle destination</div>
+      <h2 style="font-size:clamp(1.8rem,3vw,2.4rem); color:var(--cream); margin-bottom:22px;">First of its kind in Dharmanagar, North Tripura.</h2>
+      <p>AfterDark Cafe brings together premium cafe experiences, wholesome food, fitness-focused options and lifestyle services in Dharmanagar, North Tripura. The concept connects three divisions under one roof: cafe, premium unisex salon, and unisex gym.</p>
+      <p>Eat clean, train hard, drink premium, live after dark: taste, fitness, wellness and lifestyle come together in a single premium space designed for health, body and looks, all in one place.</p>
+      <div class="about-stats">
+        <div><div class="num"><i class="fa-solid fa-mug-hot"></i></div><div class="label">Cafe</div></div>
+        <div><div class="num"><i class="fa-solid fa-scissors"></i></div><div class="label">Premium unisex salon</div></div>
+        <div><div class="num"><i class="fa-solid fa-dumbbell"></i></div><div class="label">Unisex gym</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker"><i class="fa-solid fa-layer-group"></i> Three divisions, one destination</div>
+        <h2>Cafe. Salon. Gym.</h2>
+      </div>
+      <p>Taste, fitness, wellness and lifestyle, connected under one roof.</p>
+    </div>
+    <div class="experience-grid">
+      <div class="experience-card">
+        <i class="fa-solid fa-mug-hot card-icon"></i>
+        <h3>Cafe</h3>
+        <p>Premium coffee and beverages alongside continental cuisine, in a premium cafe ambience with a live open kitchen experience.</p>
+        <ul>
+          <li><i class="fa-solid fa-circle"></i> Fresh and healthy salad bowls</li>
+          <li><i class="fa-solid fa-circle"></i> Real fruit juices and detox drinks</li>
+          <li><i class="fa-solid fa-circle"></i> Diet-friendly meals</li>
+          <li><i class="fa-solid fa-circle"></i> Gym and high-protein food options</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <i class="fa-solid fa-scissors card-icon"></i>
+        <h3>Premium Unisex Salon</h3>
+        <p>A modern lifestyle experience for personal care and grooming, part of the complete AfterDark destination.</p>
+        <ul>
+          <li><i class="fa-solid fa-circle"></i> Personal care and grooming</li>
+          <li><i class="fa-solid fa-circle"></i> A modern lifestyle experience</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <i class="fa-solid fa-dumbbell card-icon"></i>
+        <h3>Unisex Gym</h3>
+        <p>Training, fitness and wellness for everyone, connected to gym and high-protein food options from the cafe.</p>
+        <ul>
+          <li><i class="fa-solid fa-circle"></i> Training and fitness</li>
+          <li><i class="fa-solid fa-circle"></i> Wellness-focused</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="open-kitchen">
+  <div class="wrap kitchen-inner">
+    <i class="fa-solid fa-fire-burner feature-icon"></i>
+    <h3>Open Kitchen</h3>
+    <p>A live, fresh and engaging food preparation experience, right where you can see it.</p>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker"><i class="fa-solid fa-book-open"></i> What's on offer</div>
+        <h2>Eat, train, glow.</h2>
+      </div>
+      <p>Premium coffee and beverages, continental cuisine, and food built around fitness and wellness.</p>
+    </div>
+
+    <div class="menu-tabs">
+      <div class="menu-tab is-active"><i class="fa-solid fa-mug-hot"></i> Coffee & Beverages</div>
+      <div class="menu-tab"><i class="fa-solid fa-utensils"></i> Continental Cuisine</div>
+      <div class="menu-tab"><i class="fa-solid fa-dumbbell"></i> Gym Food & Protein</div>
+      <div class="menu-tab"><i class="fa-solid fa-leaf"></i> Salads, Juices & Detox</div>
+    </div>
+
+    <div class="menu-cols">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div class="menu-item-name">
+            <div>
+              <span class="menu-item-title"><i class="fa-solid fa-mug-hot"></i> Premium Coffee & Beverages</span>
+              <span class="menu-item-desc">A premium range of coffee and beverages, served in a premium cafe ambience.</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-name">
+            <div>
+              <span class="menu-item-title"><i class="fa-solid fa-utensils"></i> Continental Cuisine</span>
+              <span class="menu-item-desc">Pasta, pizza, steaks, burgers, sandwiches, and more.</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-name">
+            <div>
+              <span class="menu-item-title"><i class="fa-solid fa-dumbbell"></i> Gym Food & Protein</span>
+              <span class="menu-item-desc">High-protein meals, chicken bowls, protein cheese, protein shakes.</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-name">
+            <div>
+              <span class="menu-item-title"><i class="fa-solid fa-bowl-food"></i> Diet-Friendly Meals</span>
+              <span class="menu-item-desc">Meals designed around diet-friendly, fitness-focused eating.</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div class="menu-item-name">
+            <div>
+              <span class="menu-item-title"><i class="fa-solid fa-leaf"></i> Premium Salads</span>
+              <span class="menu-item-desc">Fresh, nutritious, delicious salad bowls.</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-name">
+            <div>
+              <span class="menu-item-title"><i class="fa-solid fa-glass-water"></i> Real Fruit Juices</span>
+              <span class="menu-item-desc">100% natural, no added sugar, pure goodness.</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-name">
+            <div>
+              <span class="menu-item-title"><i class="fa-solid fa-seedling"></i> Detox Drinks</span>
+              <span class="menu-item-desc">Cleanse, recharge, feel lighter.</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-name">
+            <div>
+              <span class="menu-item-title"><i class="fa-solid fa-fire-burner"></i> Live Open Kitchen Experience</span>
+              <span class="menu-item-desc">Fresh food prepared live, right in front of you.</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker"><i class="fa-solid fa-image"></i> The AfterDark experience</div>
+        <h2>A preview of what's coming.</h2>
+      </div>
+      <p>A glimpse of the cafe, kitchen, food, salon and gym coming to Dharmanagar.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item-1"><button type="button" class="gallery-card" data-icon="fa-mug-hot" data-label="Cafe"><span class="g-placeholder"><i class="fa-solid fa-mug-hot"></i></span><span class="g-zoom"><i class="fa-solid fa-expand"></i></span><span class="g-label"><i class="fa-solid fa-mug-hot"></i>Cafe</span></button></div>
+      <div class="g-item-2"><button type="button" class="gallery-card" data-icon="fa-fire-burner" data-label="Open kitchen"><span class="g-placeholder"><i class="fa-solid fa-fire-burner"></i></span><span class="g-zoom"><i class="fa-solid fa-expand"></i></span><span class="g-label"><i class="fa-solid fa-fire-burner"></i>Open kitchen</span></button></div>
+      <div class="g-item-3"><button type="button" class="gallery-card" data-icon="fa-leaf" data-label="Premium salads"><span class="g-placeholder"><i class="fa-solid fa-leaf"></i></span><span class="g-zoom"><i class="fa-solid fa-expand"></i></span><span class="g-label"><i class="fa-solid fa-leaf"></i>Premium salads</span></button></div>
+      <div class="g-item-4"><button type="button" class="gallery-card" data-icon="fa-scissors" data-label="Salon"><span class="g-placeholder"><i class="fa-solid fa-scissors"></i></span><span class="g-zoom"><i class="fa-solid fa-expand"></i></span><span class="g-label"><i class="fa-solid fa-scissors"></i>Salon</span></button></div>
+      <div class="g-item-5"><button type="button" class="gallery-card" data-icon="fa-dumbbell" data-label="Gym"><span class="g-placeholder"><i class="fa-solid fa-dumbbell"></i></span><span class="g-zoom"><i class="fa-solid fa-expand"></i></span><span class="g-label"><i class="fa-solid fa-dumbbell"></i>Gym</span></button></div>
+    </div>
+  </div>
+</section>
+
+<section class="careers" id="careers">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker"><i class="fa-solid fa-user-group"></i> We're hiring</div>
+        <h2>Join the AfterDark team.</h2>
+      </div>
+      <p>AfterDark Cafe is currently recruiting for the upcoming business in Dharmanagar.</p>
+    </div>
+
+    <div class="careers-grid">
+      <div class="job-card">
+        <div class="job-title">Female Receptionist</div>
+        <div class="job-count">1 position</div>
+        <ul>
+          <li><i class="fa-solid fa-circle"></i> Experienced and confident</li>
+          <li><i class="fa-solid fa-circle"></i> Excellent communication and presentation skills</li>
+          <li><i class="fa-solid fa-circle"></i> Well-groomed, welcoming and customer-friendly</li>
+        </ul>
+      </div>
+      <div class="job-card">
+        <div class="job-title">Continental Chef</div>
+        <div class="job-count">1 position</div>
+        <ul>
+          <li><i class="fa-solid fa-circle"></i> Experienced in continental cuisine</li>
+          <li><i class="fa-solid fa-circle"></i> Creative, skilled and passionate about food</li>
+          <li><i class="fa-solid fa-circle"></i> Professional kitchen experience preferred</li>
+        </ul>
+      </div>
+      <div class="job-card">
+        <div class="job-title">Experienced Service Staff</div>
+        <div class="job-count">4 positions</div>
+        <ul>
+          <li><i class="fa-solid fa-circle"></i> Prior cafe/restaurant experience preferred</li>
+          <li><i class="fa-solid fa-circle"></i> Smart, well-groomed and customer-focused</li>
+          <li><i class="fa-solid fa-circle"></i> Good communication and service skills</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="qualities-row" aria-label="Qualities we look for">
+      <span class="quality-pill">Experience</span>
+      <span class="quality-pill">Discipline</span>
+      <span class="quality-pill">Presentation</span>
+      <span class="quality-pill">Hospitality</span>
+      <span class="quality-pill">Passion</span>
+    </div>
+
+    <div class="apply-cta">
+      <p>Interested in joining the team ahead of opening?</p>
+      <button type="button" class="btn btn-primary" id="applyOpenBtn" aria-haspopup="dialog" aria-controls="applyModal"><i class="fa-solid fa-paper-plane"></i> Apply Now</button>
+    </div>
+  </div>
+</section>
+
+<div class="apply-modal" id="applyModal" role="dialog" aria-modal="true" aria-labelledby="applyModalTitle">
+  <div class="apply-modal-panel">
+    <button type="button" class="apply-modal-close" id="applyCloseBtn" aria-label="Close application form"><i class="fa-solid fa-xmark"></i></button>
+    <h3 id="applyModalTitle">Apply for a Position</h3>
+    <div class="modal-note"><i class="fa-solid fa-circle-info"></i> Application contact details coming soon. This form is not yet connected to send submissions.</div>
+    <form id="applyForm">
+      <div class="apply-field">
+        <label for="applyName">Full name</label>
+        <input type="text" id="applyName" name="applyName" autocomplete="name">
+      </div>
+      <div class="apply-field">
+        <label for="applyPosition">Position</label>
+        <select id="applyPosition" name="applyPosition">
+          <option value="">Select a position</option>
+          <option value="Female Receptionist">Female Receptionist</option>
+          <option value="Continental Chef">Continental Chef</option>
+          <option value="Experienced Service Staff">Experienced Service Staff</option>
+        </select>
+      </div>
+      <div class="apply-field">
+        <label for="applyContact">Phone or email</label>
+        <input type="text" id="applyContact" name="applyContact" autocomplete="tel email">
+      </div>
+      <div class="apply-field">
+        <label for="applyMessage">Message</label>
+        <textarea id="applyMessage" name="applyMessage"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Save for When We Launch</button>
+    </form>
+  </div>
+</div>
+
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <div class="kicker"><i class="fa-solid fa-hourglass-half"></i> Coming soon</div>
+      <h2 style="font-size:clamp(1.5rem, 3.6vw, 2.8rem); color:var(--cream); margin-bottom:12px; white-space:normal;">A new lifestyle destination for cafe, fitness, wellness and grooming.</h2>
+      <p style="color:var(--cream-dim); max-width:48ch; margin-bottom:12px; font-size:0.92rem;">AfterDark Cafe is opening soon in Dharmanagar, North Tripura, a new experience for the region and the first of its kind in the city.</p>
+      <div class="visit-note" style="margin-top:0; padding:12px 16px;"><i class="fa-solid fa-circle-info"></i>Opening date, hours and exact location will be announced closer to launch.</div>
+
+      <div class="contact-card contact-card-inline">
+        <div class="contact-row">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <div class="label">Location</div>
+            <div class="value">Dharmanagar, North Tripura</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <i class="fa-solid fa-hourglass-half"></i>
+          <div>
+            <div class="label">Status</div>
+            <div class="value">Opening soon</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <i class="fa-brands fa-instagram"></i>
+          <div>
+            <div class="label">Instagram</div>
+            <div class="value">&#64;after_dark_2k26</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-row" style="margin-top:12px;" aria-label="Social media links">
+        <a href="https://www.instagram.com/after_dark_2k26" target="_blank" rel="noopener noreferrer" aria-label="AfterDark Cafe on Instagram" title="Instagram: &#64;after_dark_2k26"><i class="fa-brands fa-instagram"></i></a>
+        <span class="social-soon" tabindex="0" role="button" aria-label="Facebook, coming soon" title="Facebook, coming soon"><i class="fa-brands fa-facebook-f"></i></span>
+        <span class="social-soon" tabindex="0" role="button" aria-label="X, coming soon" title="X, coming soon"><i class="fa-brands fa-x-twitter"></i></span>
+        <span class="social-soon" tabindex="0" role="button" aria-label="WhatsApp channel, coming soon" title="WhatsApp channel, coming soon"><i class="fa-brands fa-whatsapp"></i></span>
+      </div>
+    </div>
+
+    <div class="visit-map-col">
+      <div class="kicker"><i class="fa-solid fa-location-dot"></i> Find us</div>
+      <div class="map-card map-card-tall">
+        <div class="map-frame-wrap">
+          <iframe title="Google Map centered on Dharmanagar, North Tripura" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Dharmanagar%2C%20North%20Tripura&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+        <div class="map-actions">
+          <span class="map-note"><i class="fa-solid fa-circle-info" style="color:var(--gold); margin-right:6px;"></i>General area shown. Exact address to be announced closer to opening.</span>
+          <a class="map-open-btn" href="https://www.google.com/maps/search/?api=1&query=Dharmanagar%2C%20North%20Tripura" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i> Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="experience-band">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker"><i class="fa-solid fa-moon"></i> The AfterDark experience</div>
+        <h2>Taste. Fitness. Wellness.</h2>
+      </div>
+      <p>More than coffee, it's an AfterDark experience.</p>
+    </div>
+    <div class="review-grid">
+      <div class="review-card">
+        <i class="fa-solid fa-mug-hot" style="color:var(--gold); font-size:1.4rem; margin-bottom:16px; display:block;"></i>
+        <p class="review-text">Good food, healthy you, better tomorrow. Premium cafe experiences built around real ingredients and real flavor.</p>
+      </div>
+      <div class="review-card">
+        <i class="fa-solid fa-dumbbell" style="color:var(--gold); font-size:1.4rem; margin-bottom:16px; display:block;"></i>
+        <p class="review-text">Eat clean, train hard, drink premium, live after dark. Fitness-focused food and a unisex gym, side by side.</p>
+      </div>
+      <div class="review-card">
+        <i class="fa-solid fa-scissors" style="color:var(--gold); font-size:1.4rem; margin-bottom:16px; display:block;"></i>
+        <p class="review-text">Good food, good vibes, great lifestyle. A premium unisex salon rounds out the complete destination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <img src="https://i.ibb.co/1fkXTF5T/afterdark-cafelogo.png" alt="AfterDark Cafe emblem">
+    <h2>More than coffee.<br><span class="cta-subline">It's an AfterDark experience.</span></h2>
+    <p>Opening soon in Dharmanagar, North Tripura: cafe, premium unisex salon and unisex gym, all in one place.</p>
+    <div class="cta-actions">
+      <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-mug-hot"></i> See What's Coming</a>
+      <a href="#careers" class="btn btn-ghost"><i class="fa-solid fa-user-group"></i> We're Hiring</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="https://i.ibb.co/1fkXTF5T/afterdark-cafelogo.png" alt="AfterDark Cafe logo">
+          <span class="name">AfterDark Cafe</span>
+        </div>
+        <p>A complete lifestyle destination opening soon in Dharmanagar, North Tripura.</p>
+        <div class="social-row" aria-label="Social media links">
+          <a href="https://www.instagram.com/after_dark_2k26" target="_blank" rel="noopener noreferrer" aria-label="AfterDark Cafe on Instagram" title="Instagram: &#64;after_dark_2k26"><i class="fa-brands fa-instagram"></i></a>
+          <span class="social-soon" tabindex="0" role="button" aria-label="Facebook, coming soon" title="Facebook, coming soon"><i class="fa-brands fa-facebook-f"></i></span>
+          <span class="social-soon" tabindex="0" role="button" aria-label="X, coming soon" title="X, coming soon"><i class="fa-brands fa-x-twitter"></i></span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Cafe, Salon, Gym</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Join Us</h4>
+        <ul>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#visit">Location</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li>Instagram: &#64;after_dark_2k26</li>
+          <li>Contact details coming soon</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AfterDark Cafe. All rights reserved.</p>
+      <p class="made">Opening soon <i class="fa-solid fa-moon"></i> Dharmanagar, North Tripura</p>
+    </div>
+    <div class="footer-showcase">
+      <span>Website showcase and development by Novique</span>
+      <span class="divider">|</span>
+      <a href="https://github.com/ronakksdevelopment" target="_blank" rel="noopener noreferrer" aria-label="Developer GitHub profile, ronakksdevelopment" title="GitHub: @ronakksdevelopment"><i class="fa-brands fa-github"></i> @ronakksdevelopment</a>
+      <span class="divider">|</span>
+      <button type="button" id="devPopupOpenBtn" aria-haspopup="dialog" aria-controls="devPopup"><i class="fa-solid fa-envelope"></i> Contact Us</button>
+    </div>
+  </div>
+</footer>
+
+<div class="dev-popup" id="devPopup" role="dialog" aria-modal="true" aria-labelledby="devPopupTitle">
+  <div class="dev-popup-panel">
+    <button type="button" class="dev-popup-close" id="devPopupCloseBtn" aria-label="Close contact popup"><i class="fa-solid fa-xmark"></i></button>
+    <h3 id="devPopupTitle">Build with <span class="dev-popup-heart">&#10084;</span> by Novique Team</h3>
+    <p class="dev-sub">This is website showcase and development contact information only, not an official AfterDark Cafe business contact.</p>
+    <div class="dev-contact-row">
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:noviquedesign.team@gmail.com">noviquedesign.team@gmail.com</a>
+    </div>
+    <div class="dev-contact-row">
+      <i class="fa-brands fa-whatsapp"></i>
+      <a href="https://wa.me/919366915733" target="_blank" rel="noopener noreferrer">Call or WhatsApp: +91 93669 15733</a>
+    </div>
+    <a href="mailto:noviquedesign.team@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Us</a>
+    <p class="dev-note">For AfterDark Cafe business matters, please use the in-page careers and location sections above. Direct business contact details are coming soon.</p>
+  </div>
+</div>
+
+<div class="lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption">
+  <div class="lightbox-panel">
+    <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="Close image view"><i class="fa-solid fa-xmark"></i></button>
+    <div class="lightbox-media-wrap">
+      <span class="g-placeholder" id="lightboxPlaceholder"><i class="fa-solid fa-mug-hot"></i></span>
+    </div>
+    <div class="lightbox-caption" id="lightboxCaption"><i class="fa-solid fa-image"></i> <span id="lightboxCaptionText">Cafe</span></div>
+  </div>
+</div>
+
+<script>
+  (function(){
+
+    /* ---------- Generic modal-style overlay helper ---------- */
+    function wireOverlay(overlayEl, openTriggers, closeTriggers, closeOnBackdrop, onOpen, onClose){
+      function open(){
+        overlayEl.classList.add('is-open');
+        document.body.classList.add('sidebar-locked');
+        if(onOpen){ onOpen(); }
+      }
+      function close(){
+        overlayEl.classList.remove('is-open');
+        document.body.classList.remove('sidebar-locked');
+        if(onClose){ onClose(); }
+      }
+      openTriggers.forEach(function(t){ if(t){ t.addEventListener('click', open); } });
+      closeTriggers.forEach(function(t){ if(t){ t.addEventListener('click', close); } });
+      if(closeOnBackdrop){
+        overlayEl.addEventListener('click', function(e){
+          if(e.target === overlayEl){ close(); }
+        });
+      }
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' && overlayEl.classList.contains('is-open')){ close(); }
+      });
+      return { open: open, close: close };
+    }
+
+    /* ---------- Theme toggle (light / dark) ---------- */
+    var themeToggleBtn = document.getElementById('themeToggleBtn');
+    var themeToggleBtnMobile = document.getElementById('themeToggleBtnMobile');
+    var root = document.documentElement;
+
+    function currentTheme(){
+      return root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    }
+
+    function updateToggleLabels(theme){
+      var isLight = theme === 'light';
+      var label = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+      [themeToggleBtn, themeToggleBtnMobile].forEach(function(btn){
+        if(!btn){ return; }
+        btn.setAttribute('aria-label', label);
+        btn.setAttribute('aria-pressed', String(isLight));
+      });
+      var mobileText = themeToggleBtnMobile ? themeToggleBtnMobile.querySelector('.theme-toggle-label') : null;
+      if(mobileText){ mobileText.textContent = isLight ? 'Dark mode' : 'Light mode'; }
+    }
+
+    function setTheme(theme){
+      if(theme === 'light'){ root.setAttribute('data-theme', 'light'); }
+      else{ root.removeAttribute('data-theme'); }
+      try{ localStorage.setItem('afterdark-theme', theme); }catch(e){}
+      updateToggleLabels(theme);
+    }
+
+    function toggleTheme(){
+      setTheme(currentTheme() === 'light' ? 'dark' : 'light');
+    }
+
+    updateToggleLabels(currentTheme());
+    if(themeToggleBtn){ themeToggleBtn.addEventListener('click', toggleTheme); }
+    if(themeToggleBtnMobile){ themeToggleBtnMobile.addEventListener('click', toggleTheme); }
+
+    /* ---------- Sidebar navigation ---------- */
+    var sidebar = document.getElementById('sideNav');
+    var sidebarBackdrop = document.getElementById('sidebarBackdrop');
+    var sidebarOpenBtn = document.getElementById('sidebarOpenBtn');
+    var sidebarCloseBtn = document.getElementById('sidebarCloseBtn');
+
+    if(sidebar && sidebarBackdrop && sidebarOpenBtn){
+      var sidebarCtl = {
+        open: function(){
+          sidebar.classList.add('is-open');
+          sidebarBackdrop.classList.add('is-open');
+          sidebar.setAttribute('aria-hidden', 'false');
+          sidebarOpenBtn.setAttribute('aria-expanded', 'true');
+          document.body.classList.add('sidebar-locked');
+          sidebarCloseBtn.focus();
+        },
+        close: function(){
+          sidebar.classList.remove('is-open');
+          sidebarBackdrop.classList.remove('is-open');
+          sidebar.setAttribute('aria-hidden', 'true');
+          sidebarOpenBtn.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('sidebar-locked');
+          sidebarOpenBtn.focus();
+        }
+      };
+      sidebarOpenBtn.addEventListener('click', sidebarCtl.open);
+      if(sidebarCloseBtn){ sidebarCloseBtn.addEventListener('click', sidebarCtl.close); }
+      sidebarBackdrop.addEventListener('click', sidebarCtl.close);
+      sidebar.querySelectorAll('a').forEach(function(link){
+        link.addEventListener('click', sidebarCtl.close);
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' && sidebar.classList.contains('is-open')){ sidebarCtl.close(); }
+      });
+    }
+
+    /* ---------- Careers application modal ---------- */
+    var applyModal = document.getElementById('applyModal');
+    var applyOpenBtn = document.getElementById('applyOpenBtn');
+    var applyCloseBtn = document.getElementById('applyCloseBtn');
+    var applyForm = document.getElementById('applyForm');
+
+    if(applyModal && applyOpenBtn){
+      wireOverlay(applyModal, [applyOpenBtn], [applyCloseBtn], true,
+        function(){ applyCloseBtn.focus(); },
+        function(){ applyOpenBtn.focus(); }
+      );
+    }
+    if(applyForm){
+      applyForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        var note = applyModal.querySelector('.modal-note');
+        note.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thanks. Application contact details are coming soon, so this form is not yet connected to send submissions anywhere. Please check back closer to opening.';
+      });
+    }
+
+    /* ---------- Novique developer contact popup ---------- */
+    var devPopup = document.getElementById('devPopup');
+    var devPopupOpenBtn = document.getElementById('devPopupOpenBtn');
+    var devPopupCloseBtn = document.getElementById('devPopupCloseBtn');
+    if(devPopup && devPopupOpenBtn){
+      wireOverlay(devPopup, [devPopupOpenBtn], [devPopupCloseBtn], true,
+        function(){ devPopupCloseBtn.focus(); },
+        function(){ devPopupOpenBtn.focus(); }
+      );
+    }
+
+    /* ---------- Gallery lightbox ---------- */
+    var lightbox = document.getElementById('galleryLightbox');
+    var lightboxClose = document.getElementById('lightboxCloseBtn');
+    var lightboxPlaceholder = document.getElementById('lightboxPlaceholder');
+    var lightboxCaptionText = document.getElementById('lightboxCaptionText');
+    var galleryCards = document.querySelectorAll('.gallery-card');
+    var lastGalleryTrigger = null;
+
+    if(lightbox && lightboxClose && galleryCards.length){
+      var lightboxCtl = wireOverlay(lightbox, [], [lightboxClose], true,
+        function(){ lightboxClose.focus(); },
+        function(){ if(lastGalleryTrigger){ lastGalleryTrigger.focus(); } }
+      );
+      galleryCards.forEach(function(card){
+        card.addEventListener('click', function(){
+          var icon = card.getAttribute('data-icon') || 'fa-image';
+          var label = card.getAttribute('data-label') || '';
+          lightboxPlaceholder.innerHTML = '<i class="fa-solid ' + icon + '"></i>';
+          lightboxCaptionText.textContent = label;
+          lastGalleryTrigger = card;
+          lightboxCtl.open();
+        });
+      });
+    }
+
+    /* ---------- Active nav link highlighting on scroll ---------- */
+    var sections = document.querySelectorAll('section[id], header#home');
+    var topNavLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    if('IntersectionObserver' in window && topNavLinks.length){
+      var byId = {};
+      topNavLinks.forEach(function(link){
+        var id = link.getAttribute('href').slice(1);
+        byId[id] = byId[id] || [];
+        byId[id].push(link);
+      });
+      var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            topNavLinks.forEach(function(l){ l.classList.remove('is-active'); });
+            var links = byId[entry.target.id];
+            if(links){ links.forEach(function(l){ l.classList.add('is-active'); }); }
+          }
+        });
+      }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+      document.querySelectorAll('section[id]').forEach(function(sec){ observer.observe(sec); });
+    }
+
+  })();
+</script>
+
+<button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script>
+  (function(){
+    var btn = document.getElementById('backToTop');
+    if(!btn) return;
+    var threshold = 400;
+    function toggle(){
+      if(window.scrollY > threshold || document.documentElement.scrollTop > threshold){
+        btn.classList.add('is-visible');
+      } else {
+        btn.classList.remove('is-visible');
+      }
+    }
+    window.addEventListener('scroll', toggle, { passive:true });
+    toggle();
+    btn.addEventListener('click', function(){
+      window.scrollTo({ top:0, behavior:'smooth' });
+    });
+  })();
+</script>
+
+</body>
+</html>
